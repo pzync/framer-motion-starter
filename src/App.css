@@ -1,15 +1,26 @@
 .App {
   width: 100vw;
   height: 100vh;
-  background: white;
+  position: relative;
   display: flex;
-  align-items: center;
   justify-content: center;
+}
+
+.App-bg {
+  width: inherit;
+  height: inherit;
+  background-image: url(https://images.unsplash.com/photo-1514575619841-1a3d949d3277?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=582&q=80);
+  background-size: cover;
+  transition: 0.1s filter ease-in;
 }
 
 .Box {
   width: 100px;
   height: 100px;
-  background: linear-gradient(to bottom, #0084ff, #0000ff);
+  background: linear-gradient(to bottom, #f2f2ff, #ffffff);
   border-radius: 15%;
+  position: absolute;
+  z-index: 100;
+  display: block;
+  align-self: center;
 }
